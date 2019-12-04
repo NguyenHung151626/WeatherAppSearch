@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ErrorHandling_NoInternet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VQ-OT-qfP">
+                                <rect key="frame" x="0.0" y="124" width="414" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="G57-Nx-Rbp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="evf-S9-5l6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEl-mD-7Mq">
+                                <rect key="frame" x="0.0" y="185" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="evf-S9-5l6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1dX-v0-3dc"/>
+                            <constraint firstItem="bEl-mD-7Mq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Qi-Mb-ThX"/>
+                            <constraint firstItem="bEl-mD-7Mq" firstAttribute="top" secondItem="2VQ-OT-qfP" secondAttribute="bottom" constant="40" id="7wS-bk-Lq6"/>
+                            <constraint firstItem="evf-S9-5l6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CdM-Es-4U0"/>
+                            <constraint firstItem="2VQ-OT-qfP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eui-HZ-9EM"/>
+                            <constraint firstItem="evf-S9-5l6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NQb-X7-syB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bEl-mD-7Mq" secondAttribute="trailing" id="SJE-fy-aQ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2VQ-OT-qfP" secondAttribute="trailing" id="gdH-yd-Tgn"/>
+                            <constraint firstItem="2VQ-OT-qfP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="qQa-ef-9cD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="humidityLabel" destination="bEl-mD-7Mq" id="N3E-l2-tyE"/>
+                        <outlet property="searchBar" destination="evf-S9-5l6" id="UGz-MA-tYH"/>
+                        <outlet property="temperatureLabel" destination="2VQ-OT-qfP" id="3dt-nG-yAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
